@@ -9703,4 +9703,4 @@ VALUES
   (266, 'Wilson', 'White Sapote', 'Orig. in Monrovia, Calif., by W.C. Wilson. Introd. in 1927 by Armstrong Nurseries, Ontario, Calif.'),
   (266, 'Wood', 'White Sapote', 'Orig. in Encinitas, Calif., by Winfield M. Wood. Introd. in 1943. Parentage unknown; discovered in 1939.'),
   (266, 'Portoviejo', 'Zapote Chupa', 'A selection of Matisia cordata H.B.K. [Quararibea cordata (Humb. et Bonpl.) Garc. et. Hern.], also known as chuba-chuba. (Proc. Interamer. Soc. Trop. Hort. 41:223–227).');
-  /* sql-formatter-disable */
+  /* sql-formatter-enable */
