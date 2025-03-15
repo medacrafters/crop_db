@@ -43,13 +43,13 @@ comment ON COLUMN crop.icc_order.icc_order_subclass_code IS 'Foreign key referen
 comment ON COLUMN crop.icc_order.icc_order_name IS 'Name of the ICC order';
 CREATE TABLE crop.wca_crop (
   wca_crop_code INT PRIMARY KEY,
-  wca_crop_icc11_code TEXT NOT NULL,
+  wca_crop_icc_code TEXT NOT NULL,
   wca_crop_name TEXT NOT NULL,
   wca_crop_scientific_name TEXT NOT NULL
 );
 comment ON TABLE crop.wca_crop IS 'Table representing WCA crop data, including both common and scientific names. Paired to an ICC code';
 comment ON COLUMN crop.wca_crop.wca_crop_code IS 'Unique integer code identifying each WCA crop';
-comment ON COLUMN crop.wca_crop.wca_crop_icc11_code IS 'ICC code, linking WCA crops to the ICC classification system';
+comment ON COLUMN crop.wca_crop.wca_crop_icc_code IS 'ICC code, linking WCA crops to the ICC classification system';
 comment ON COLUMN crop.wca_crop.wca_crop_name IS 'Common name of the crop';
 comment ON COLUMN crop.wca_crop.wca_crop_scientific_name IS 'Scientific name of the crop (e.g., genus and species)';
 CREATE TABLE crop.cultivar (
