@@ -65,6 +65,17 @@ comment ON COLUMN crop.cultivar.cultivar_wca_crop_code IS 'Foreign key referenci
 comment ON COLUMN crop.cultivar.cultivar_name IS 'Name of the cultivar';
 comment ON COLUMN crop.cultivar.cultivar_fnc_crop_name IS 'Imported FNC crop name';
 comment ON COLUMN crop.cultivar.cultivar_description IS 'Optional description of the cultivar, providing more details about its characteristics or origin';
+CREATE TABLE crop.cultivar_attribute (
+  cultivar_attribute_id serial PRIMARY KEY,
+  cultivar_attribute_cultivar_code INT NOT NULL REFERENCES crop.cultivar (cultivar_code),
+  cultivar_attribute_name TEXT NOT NULL,
+  cultivar_attribute_value TEXT NOT NULL
+);
+comment ON TABLE crop.cultivar_attribute IS 'Key-value pairs representing additional characteristics or traits for each cultivar';
+comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_id IS 'Unique identifier for each attribute entry';
+comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_cultivar_code IS 'Foreign key linking the attribute to a specific cultivar';
+comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_name IS 'Name of the attribute (e.g., "drought tolerance", "fruit size")';
+comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_value IS 'Value of the attribute (e.g., "high", "medium", "large")';
 CREATE TABLE crop.rootstock (
   rootstock_code serial PRIMARY KEY,
   rootstock_wca_crop_code INT NOT NULL REFERENCES crop.wca_crop (wca_crop_code),
@@ -78,17 +89,6 @@ comment ON COLUMN crop.rootstock.rootstock_wca_crop_code IS 'Foreign key referen
 comment ON COLUMN crop.rootstock.rootstock_name IS 'Name of the rootstock';
 comment ON COLUMN crop.rootstock.rootstock_fnc_crop_name IS 'Imported FNC crop name';
 comment ON COLUMN crop.rootstock.rootstock_description IS 'Optional description of the rootstock, providing details like disease resistance or growth behavior';
-CREATE TABLE crop.cultivar_attribute (
-  cultivar_attribute_id serial PRIMARY KEY,
-  cultivar_attribute_cultivar_code INT NOT NULL REFERENCES crop.cultivar (cultivar_code),
-  cultivar_attribute_name TEXT NOT NULL,
-  cultivar_attribute_value TEXT NOT NULL
-);
-comment ON TABLE crop.cultivar_attribute IS 'Key-value pairs representing additional characteristics or traits for each cultivar';
-comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_id IS 'Unique identifier for each attribute entry';
-comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_cultivar_code IS 'Foreign key linking the attribute to a specific cultivar';
-comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_name IS 'Name of the attribute (e.g., "drought tolerance", "fruit size")';
-comment ON COLUMN crop.cultivar_attribute.cultivar_attribute_value IS 'Value of the attribute (e.g., "high", "medium", "large")';
 CREATE TABLE crop.rootstock_attribute (
   rootstock_attribute_id serial PRIMARY KEY,
   rootstock_attribute_rootstock_code INT NOT NULL REFERENCES crop.rootstock (rootstock_code),
