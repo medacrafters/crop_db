@@ -1,6 +1,6 @@
 # CROP_DB
 
-A database of **crops** and their **cultivars** and **rootstocks**. The crops are then paired to the **WCA Crop List**
+A database of **crops** and their **cultivars** and **rootstocks** from the FNC. The crops are then paired to the **WCA Crop List**
 and the ICC 1.1 **classifications**.
 
 Combination of:
@@ -21,6 +21,11 @@ ICC Group
       ┌────────┴────────┐
 FNC Cultivar     FNC Rootstock
 ```
+
+#### Possible additional data sources:
+
+- [rootstocks.info](https://www.rootstocks.info/rootstocks)
+- [U.S. Department of Agriculture's PLANTS Database](https://plants.usda.gov/downloads)
 
 <!-- Links -->
 
