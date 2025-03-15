@@ -1,0 +1,16 @@
+{
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 120,
+  "[sql]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
+  },
+  "SQL-Formatter-VSCode.dialect": "postgresql",
+  "SQL-Formatter-VSCode.keywordCase": "upper",
+  "SQL-Formatter-VSCode.dataTypeCase": "upper",
+  "SQL-Formatter-VSCode.identifierCase": "lower",
+  "SQL-Formatter-VSCode.functionCase": "lower",
+  "SQL-Formatter-VSCode.expressionWidth": 120,
+  "SQL-Formatter-VSCode.linesBetweenQueries": 0
+}
