@@ -1,4 +1,4 @@
-CREATE VIEW crop.view_icc_classifications AS
+CREATE VIEW crop.all_icc_classifications AS
 SELECT
   'Group' AS level,
   icc_group_code AS code,
@@ -43,4 +43,4 @@ FROM
   JOIN crop.icc_class ON crop.icc_subclass.icc_subclass_class_code = crop.icc_class.icc_class_code
 ORDER BY
   code ASC;
-comment ON view crop.view_icc_classifications IS 'Union on Group, Class, Subclass, Order. Ordered by ICC code';
+comment ON view crop.all_icc_classifications IS 'Union on Group, Class, Subclass, Order. Ordered by ICC code';
