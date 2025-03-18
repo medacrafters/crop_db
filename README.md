@@ -20,6 +20,15 @@ this db, run:
 
 _Note: This repo uses PostgreSQL. Should be easy to modify for any other dialect if you wish._
 
+### Export
+
+For releases, we use the `release` branch. On update, we can export with `pg_dump`, replace the `crop_db.sql` file and
+push as a new release. Specifically for `psycopg2` import compatibility, we are using inserts.
+
+```bash
+pg_dump -U username -d database --schema=crop --no-owner --no-acl --inserts > crop_db.sql
+```
+
 #### Classification structure:
 
 ```
