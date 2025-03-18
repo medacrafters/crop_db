@@ -37,6 +37,9 @@ FNC Cultivar     FNC Rootstock
 
 - [rootstocks.info](https://www.rootstocks.info/rootstocks)
 - [U.S. Department of Agriculture's PLANTS Database](https://plants.usda.gov/downloads)
+- [USDA National Plant Germplasm System](https://npgsweb.ars-grin.gov/gringlobal/search)
+- [RosBREED](https://www.rosbreed.org/breeding/cherry)
+- [Sweet Cherry Genome-Enabled Breeding Values XplorR](https://jpiaskowski.shinyapps.io/cherry_gebv_xplorr/)
 
 <!-- Links -->
 
