@@ -20,3 +20,5 @@
 \i 'sql/views/10_all_rootstocks_with_attributes.sql'
 \i 'sql/views/11_all_cultivars_with_all_data.sql'
 \i 'sql/views/12_all_rootstocks_with_all_data.sql'
+\i 'sql/views/13_all_cultivars_with_crops.sql'
+\i 'sql/views/14_all_rootstocks_with_crops.sql'

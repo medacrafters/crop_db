@@ -1,6 +1,6 @@
 # CROP_DB
 
-A database of **crops** and their **cultivars** and **rootstocks** from the FNC. The crops are then paired to the **WCA Crop List**
+A database of **crops** and their **cultivars** and **rootstocks**. The crops are then paired to the **WCA Crop List**
 and the ICC 1.1 **classifications**.
 
 Combination of:
@@ -8,6 +8,17 @@ Combination of:
 - Fruit and Nut Cultivars Database ([FNC][FNC])
 - World Census of Agriculture ([WCA][WCA]) Crop List of the Food and Agriculture Organization of the United Nations
 - Indicative Crop Classification ([ICC][ICC]) 1.1
+
+## Usage
+
+Can download the release db file and import or run the `psql` cli tool from the root of this directory. To initialize
+this db, run:
+
+```
+\i sql/seeds/setup.sql
+```
+
+_Note: This repo uses PostgreSQL. Should be easy to modify for any other dialect if you wish._
 
 #### Classification structure:
 
